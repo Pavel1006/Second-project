@@ -5,6 +5,7 @@
   align-items: center;
   color: azure;
   background-color: rgba(47, 150, 247, 0.966);
+  position: fixes;
 }
 .description {
   color: azure;
@@ -56,4 +57,54 @@
 }
 .firstText {
   background-color: rgba(47, 150, 247, 0.966);
+  text-align: center;
+  color: azure;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+  width: auto;
+}
+.boxes {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+h4 {
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+.bigger {
+  font-size: 25px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contentMid {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.p_width {
+  width: 730px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navSearch {
+  width: 14.1%;
+  height: 80px;
+  font-size: 20px;
+}
+.bara {
+  margin-top: 80px;
+  margin-bottom: 110px;
 }
