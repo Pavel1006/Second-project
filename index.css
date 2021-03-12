@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: azure;
+  background-color: rgba(47, 150, 247, 0.966);
+}
+.description {
+  color: azure;
+  text-decoration: none;
+}
+.left1 {
+  color: azure;
+  text-decoration: none;
+  position: relative;
+  left: 150px;
+}
+.left2 {
+  color: azure;
+  text-decoration: none;
+  position: relative;
+  left: 80px;
+}
+.right1 {
+  color: azure;
+  text-decoration: none;
+  position: relative;
+  right: 80px;
+}
+.right2 {
+  color: azure;
+  text-decoration: none;
+  position: relative;
+  right: 150px;
+}
+
+.button1 {
+  height: 30px;
+  background-color: rgba(47, 150, 247, 0.966);
+  color: azure;
+  width: 100px;
+  border: 1px solid azure;
+  border-radius: 20px;
+  position: relative;
+  left: 50px;
+}
+.button2 {
+  height: 30px;
+  width: 100px;
+  border: 1px solid azure;
+  border-radius: 20px;
+  background-color: azure;
+  position: relative;
+  right: 70px;
+}
+.firstText {
+  background-color: rgba(47, 150, 247, 0.966);
+}
