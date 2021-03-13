@@ -1,41 +1,25 @@
 .header {
+  flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   color: azure;
   background-color: rgba(47, 150, 247, 0.966);
-  position: fixes;
 }
-.description {
+.deleteDecor {
   color: azure;
   text-decoration: none;
 }
-.left1 {
-  color: azure;
-  text-decoration: none;
-  position: relative;
-  left: 150px;
+.links {
+  flex-basis: 750px;
+  display: flex;
+  justify-content: space-between;
 }
-.left2 {
-  color: azure;
-  text-decoration: none;
-  position: relative;
-  left: 80px;
+.deleteDecor:hover {
+  color: RoyalBlue;
+  transition: all 0.3s ease;
 }
-.right1 {
-  color: azure;
-  text-decoration: none;
-  position: relative;
-  right: 80px;
-}
-.right2 {
-  color: azure;
-  text-decoration: none;
-  position: relative;
-  right: 150px;
-}
-
 .button1 {
   height: 30px;
   background-color: rgba(47, 150, 247, 0.966);
@@ -43,14 +27,22 @@
   width: 100px;
   border: 1px solid azure;
   border-radius: 20px;
-  position: relative;
-  left: 50px;
 }
 .button1:focus {
   outline: none;
 }
+.button1:hover {
+  background-color: azure;
+  color: black;
+  transition: all 0.3s ease;
+}
 .button2:focus {
   outline: none;
+}
+.button2:hover {
+  background-color: rgba(47, 150, 247, 0.966);
+  color: azure;
+  transition: all 0.3s ease;
 }
 .button2 {
   height: 30px;
@@ -58,8 +50,10 @@
   border: 1px solid azure;
   border-radius: 20px;
   background-color: azure;
-  position: relative;
-  right: 70px;
+}
+.inlineButtons {
+  display: flex;
+  flex-direction: row;
 }
 .firstText {
   background-color: rgba(47, 150, 247, 0.966);
@@ -243,4 +237,13 @@ h4 {
   background: rgba(47, 150, 247, 0.966);
   border-radius: 240px 0 0 0;
   transform: rotate(293deg);
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(32, 95, 230);
+  color: azure;
+  max-height: 500px;
 }
