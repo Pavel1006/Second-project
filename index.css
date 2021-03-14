@@ -2,7 +2,7 @@
   flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: azure;
   background-color: rgba(47, 150, 247, 0.966);
@@ -54,6 +54,8 @@
 .inlineButtons {
   display: flex;
   flex-direction: row;
+  flex-basis: 230px;
+  justify-content: space-between;
 }
 .firstText {
   background-color: rgba(47, 150, 247, 0.966);
@@ -61,6 +63,10 @@
   color: azure;
 }
 body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   font-family: "Noto Sans JP", sans-serif;
 }
 .text {
@@ -82,7 +88,7 @@ h4 {
 }
 .bigger {
   font-size: 25px;
-  width: 500px;
+  max-width: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -95,7 +101,7 @@ h4 {
   padding-right: 120px;
 }
 .p_width {
-  width: 730px;
+  max-width: 730px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -109,8 +115,12 @@ h4 {
   outline: none;
 }
 .bara {
+  display: flex;
+  flex-direction: row;
   margin-top: 80px;
   margin-bottom: 110px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #color {
   background-color: rgb(248, 188, 24);
@@ -127,6 +137,7 @@ h4 {
 .row {
   display: flex;
   flex-direction: row;
+  margin-bottom: 200px;
 }
 .pointBlue {
   background-color: rgba(47, 150, 247, 0.966);
@@ -246,4 +257,171 @@ h4 {
   background-color: rgb(32, 95, 230);
   color: azure;
   max-height: 500px;
+}
+.btn3 {
+  width: 45px;
+  height: 45px;
+}
+#iconBig {
+  font-size: 25px;
+}
+.deleteDecorP {
+  color: azure;
+  text-decoration: none;
+}
+.deleteDecorP:hover {
+  color: RoyalBlue;
+  transition: all 0.3s ease;
+}
+.btn1 {
+  height: 30px;
+  background-color: rgba(73, 161, 243, 0.966);
+  color: azure;
+  width: 100px;
+  border: 1px solid azure;
+  border-radius: 20px;
+}
+.btn1:focus {
+  outline: none;
+}
+.btn1:hover {
+  background-color: azure;
+  color: black;
+  transition: all 0.3s ease;
+}
+.btn2:focus {
+  outline: none;
+}
+.btn2:hover {
+  background-color: rgba(73, 161, 243, 0.966);
+  color: azure;
+  transition: all 0.3s ease;
+}
+.btn2 {
+  height: 30px;
+  width: 100px;
+  border: 1px solid azure;
+  border-radius: 20px;
+  background-color: azure;
+}
+
+.color {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(73, 161, 243, 0.966);
+  padding: 0.5rem 1rem;
+}
+li {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+#footer2 {
+  background-color: rgb(32, 95, 230);
+  margin-left: auto;
+  margin-right: auto;
+}
+.size {
+  flex-basis: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .btn3 {
+    display: none;
+  }
+  .color {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+  #disepare2 {
+    display: none;
+  }
+  #disepare {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .btn3 {
+    margin-right: 20px;
+  }
+  .color {
+    display: none;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .theDiagram {
+    width: auto;
+  }
+  .text2 {
+    flex-direction: column;
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .theDiagram {
+    display: none;
+  }
+  .footer {
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 850px) {
+  .row {
+    margin-bottom: 80px;
+  }
+  .text {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contentMid {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .width_resp {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bara {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 656px) {
+  .bara {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+    margin-left: 0px;
+  }
+  .navSearch {
+    width: auto;
+    height: 80px;
+    font-size: 20px;
+  }
 }
