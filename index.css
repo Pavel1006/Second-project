@@ -334,13 +334,22 @@ li {
   .color {
     display: none;
   }
+  #footer2 {
+    display: none;
+  }
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .footer {
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 80px;
   }
+  ul.color.\.color-active {
+    display: block;
+  }
+  /*#nav-taggle:checked ~ ul {
+    display: block;
+  }*/
   #disepare2 {
     display: none;
   }
@@ -355,6 +364,9 @@ li {
   }
   .color {
     display: none;
+  }
+  .color-active {
+    display: block;
   }
   .row {
     flex-direction: column;
@@ -375,6 +387,21 @@ li {
   }
 }
 @media (max-width: 520px) {
+  .paddingP {
+    padding-left: 10px;
+  }
+  .pointBlue {
+    display: none;
+  }
+  .pointYellow {
+    display: none;
+  }
+  .pointOrange {
+    display: none;
+  }
+  .pointGreen {
+    display: none;
+  }
   .theDiagram {
     display: none;
   }
@@ -383,7 +410,13 @@ li {
     padding-left: 5px;
     padding-right: 10px;
   }
+  .size {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+  }
 }
+
 @media (max-width: 850px) {
   .row {
     margin-bottom: 80px;

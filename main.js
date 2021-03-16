@@ -1,5 +1,8 @@
-const toggleButton = document.getElementsByClassName("btn3")[0];
-const navBar = document.getElementsByClassName("color")[0];
-toggleButton.addEventListener("click", () => {
-  navBar.classList.toggle("active");
-});
+const navSlide = () => {
+  const toggleButton = document.querySelector(".btn3");
+  const navBar = document.querySelector(".color");
+  toggleButton.addEventListener("click", () => {
+    navBar.classList.toggle(".color-active");
+  });
+};
+navSlide();
